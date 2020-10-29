@@ -7,7 +7,7 @@
  * @var integer $defaultTailLine
  */
 
-use kriss\logReader\Log;
+use nfacha\logReader\Log;
 use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\i18n\Formatter;

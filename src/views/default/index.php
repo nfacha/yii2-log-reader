@@ -5,9 +5,9 @@
  * @var integer $defaultTailLine
  */
 
+use nfacha\logReader\Log;
 use yii\grid\GridView;
 use yii\helpers\Html;
-use kriss\logReader\Log;
 
 $this->title = 'Logs';
 $this->params['breadcrumbs'][] = 'Logs';

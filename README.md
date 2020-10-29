@@ -47,7 +47,8 @@ return [
     'bootstrap' => ['log-reader'],
     'modules' => [
         'log-reader' => [
-            'class' => 'kriss\logReader\Module',
+            'class' => 'nfacha\logReader\Module',
+            'VIEW_LOGS_PERMISSION' => 'MY_PERMISSION',
             //'as login_filter' => UserLoginFilter::class, // to use login filter
             'aliases' => [
                 'Frontend' => '@frontend/runtime/logs/app.log',

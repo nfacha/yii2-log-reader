@@ -1,8 +1,8 @@
 <?php
 
-namespace kriss\logReader\models;
+namespace nfacha\logReader\models;
 
-use kriss\logReader\Log;
+use nfacha\logReader\Log;
 use yii\base\Model;
 use ZipArchive;
 

@@ -1,13 +1,11 @@
 <?php
 
-namespace kriss\logReader\controllers;
+namespace nfacha\logReader\controllers;
 
-use common\enum\PermissionType;
-use common\enum\ServerAccessType;
-use kriss\logReader\Log;
-use kriss\logReader\models\CleanForm;
-use kriss\logReader\models\ZipLogForm;
-use kriss\logReader\Module;
+use nfacha\logReader\Log;
+use nfacha\logReader\models\CleanForm;
+use nfacha\logReader\models\ZipLogForm;
+use nfacha\logReader\Module;
 use Yii;
 use yii\data\ArrayDataProvider;
 use yii\filters\AccessControl;

@@ -1,6 +1,6 @@
 <?php
 
-namespace kriss\logReader;
+namespace nfacha\logReader;
 
 use Yii;
 use yii\base\BaseObject;
