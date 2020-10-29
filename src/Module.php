@@ -19,6 +19,8 @@ class Module extends \yii\base\Module implements BootstrapInterface
      * @var array
      */
     public $aliases = [];
+
+    public static $VIEW_LOGS_PERMISSION = 'VIEW_APPLICATION_LOGS';
     /**
      * @var array
      */

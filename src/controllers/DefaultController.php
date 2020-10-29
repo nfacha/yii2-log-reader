@@ -2,12 +2,15 @@
 
 namespace kriss\logReader\controllers;
 
+use common\enum\PermissionType;
+use common\enum\ServerAccessType;
 use kriss\logReader\Log;
 use kriss\logReader\models\CleanForm;
 use kriss\logReader\models\ZipLogForm;
 use kriss\logReader\Module;
 use Yii;
 use yii\data\ArrayDataProvider;
+use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -20,6 +23,22 @@ class DefaultController extends Controller
      * @var Module
      */
     public $module;
+
+    public function behaviors(): array
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => [Module::$VIEW_LOGS_PERMISSION],
+                    ],
+                ],
+            ],
+        ];
+    }
+
 
     public function actionIndex()
     {
